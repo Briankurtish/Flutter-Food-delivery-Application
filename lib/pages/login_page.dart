@@ -19,7 +19,17 @@ class LoginPage extends StatelessWidget {
             ),
 
             const SizedBox(height: 25),
+
             // Message, app slogan
+            Text(
+              "Food Delivery App",
+              style: TextStyle(
+                fontSize: 16,
+                color: Theme.of(context).colorScheme.inversePrimary,
+              ),
+            ),
+
+            const SizedBox(height: 25),
 
             // email text field
 
