@@ -1,5 +1,6 @@
 import 'package:demo_tes/components/my_button.dart';
 import 'package:demo_tes/components/my_textfield.dart';
+import 'package:demo_tes/pages/home.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 
@@ -16,6 +17,17 @@ class _LoginPageState extends State<LoginPage> {
   final TextEditingController emailController = TextEditingController();
 
   final TextEditingController passwordController = TextEditingController();
+
+  // login method
+  void login() {
+    // navigate to homepage
+    Navigator.push(
+      context,
+      MaterialPageRoute(
+        builder: ((context) => HomePage()),
+      ),
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -66,7 +78,7 @@ class _LoginPageState extends State<LoginPage> {
             // sign in button
             MyButton(
               text: "Sign In",
-              onTap: () {},
+              onTap: login,
             ),
 
             const SizedBox(height: 25),

@@ -1,3 +1,4 @@
+import 'package:demo_tes/components/my_drawer.dart';
 import 'package:flutter/material.dart';
 
 class HomePage extends StatefulWidget {
@@ -10,19 +11,9 @@ class HomePage extends StatefulWidget {
 class _HomePageState extends State<HomePage> {
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Column(
-        children: [
-          Padding(
-            padding: EdgeInsets.all(20.0),
-            child: Row(
-              children: [
-                Text("Hello Sir"),
-              ],
-            ),
-          ),
-        ],
-      ),
+    return Scaffold(
+      appBar: AppBar(title: Text("Homepage")),
+      drawer: MyDrawer(),
     );
   }
 }
