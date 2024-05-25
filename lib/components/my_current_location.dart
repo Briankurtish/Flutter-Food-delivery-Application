@@ -47,7 +47,7 @@ class MyCurrentLocation extends StatelessWidget {
               children: [
                 // address
                 Text(
-                  "3265 Kaliland St",
+                  "3265 Kaliland Magusa St",
                   style: TextStyle(
                       color: Theme.of(context).colorScheme.inversePrimary,
                       fontWeight: FontWeight.bold),
