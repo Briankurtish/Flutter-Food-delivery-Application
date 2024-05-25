@@ -1,3 +1,4 @@
+import 'package:demo_tes/components/my_button.dart';
 import 'package:demo_tes/components/my_textfield.dart';
 import 'package:flutter/material.dart';
 
@@ -43,7 +44,7 @@ class LoginPage extends StatelessWidget {
               obscureText: false,
             ),
 
-            const SizedBox(height: 25),
+            const SizedBox(height: 10),
 
             // password textfield
             MyTextField(
@@ -52,7 +53,13 @@ class LoginPage extends StatelessWidget {
               obscureText: true,
             ),
 
+            const SizedBox(height: 25),
+
             // sign in button
+            MyButton(
+              text: "Sign In",
+              onTap: () {},
+            ),
 
             // not a member? register now
           ],
