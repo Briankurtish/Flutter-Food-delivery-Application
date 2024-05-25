@@ -1,3 +1,4 @@
+import 'package:demo_tes/components/my_textfield.dart';
 import 'package:flutter/material.dart';
 
 class LoginPage extends StatelessWidget {
@@ -36,6 +37,11 @@ class LoginPage extends StatelessWidget {
             const SizedBox(height: 25),
 
             // email text field
+            MyTextField(
+              controller: emailController,
+              hintText: "Email",
+              obscureText: false,
+            ),
 
             // password textfield
 
